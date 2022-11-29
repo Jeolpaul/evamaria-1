@@ -17,13 +17,13 @@ API_HASH = environ['API_HASH']
 BOT_TOKEN = environ['BOT_TOKEN']
 
 # Bot Decoraters
-GROUP_SUPPORT = environ['GROUP_SUPPORT', 'M4ovie']
-UPDATES_CHANNEL = environ['UPDATES_CHANNEL', 'MR_LINK_Z']
+GROUP_SUPPORT = environ.get['GROUP_SUPPORT', 'M4ovie']
+UPDATES_CHANNEL = environ.get['UPDATES_CHANNEL', 'MR_LINK_Z']
 OWNER_ID = int(environ['OWNER_ID', 5558249587])
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
+USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', "True"))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/8c74be456b8f198e7f79c.jpg')).split()
 PICS_RT = (environ.get('PICS_RT', 'https://telegra.ph/file/8c74be456b8f198e7f79c.jpg')).split()
 
