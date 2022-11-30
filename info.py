@@ -19,7 +19,7 @@ BOT_TOKEN = environ['BOT_TOKEN']
 # Bot Decoraters
 GROUP_SUPPORT = environ.get('GROUP_SUPPORT', 'mr_malayalm_movies')
 UPDATES_CHANNEL = environ.get('UPDATES_CHANNEL', 'MR_LINK_Z')
-OWNER_ID = int(environ['OWNER_ID', 5558249587])
+OWNER_ID = int(environ['OWNER_ID'])
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
